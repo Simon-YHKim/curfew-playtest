@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0c0d14"><title>Curfew Playtest</title><link rel="icon" href="data:,">
+<style>
+@font-face{font-family:CurfewDisplay;src:url(fonts/CurfewDisplay.woff2) format("woff2");font-display:swap}
+@font-face{font-family:CurfewBody;src:url(fonts/CurfewBody.woff2) format("woff2");font-display:swap}
+:root{color-scheme:dark;--ink:#15151d;--paper:#ece2cb;--shade:#b8ad95;--red:#c8432e;background:#0c0d14;color:var(--paper);font:18px/1.65 CurfewBody,sans-serif}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}
+#stage,canvas{position:absolute;inset:0;width:100%;height:100%;display:block;outline:none}
+.overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:28px;padding:32px;background:radial-gradient(ellipse at 50% 45%,#15151d,#0c0d14 70%);text-align:center}
+.lockup{display:flex;align-items:center;gap:24px}.title{font:clamp(70px,9vw,120px)/1.1 CurfewDisplay,serif;letter-spacing:.06em;margin:0}
+.seal{background:var(--red);width:62px;height:62px;display:grid;place-items:center;transform:rotate(4deg);font:24px/1.1 CurfewDisplay;outline:1px solid var(--paper);outline-offset:-7px}
+.edition{font-size:18px;letter-spacing:.3em;color:var(--shade)}.band{width:min(420px,75vw);height:16px;background:var(--paper);position:relative;filter:url(#rough);outline:1px solid var(--shade);outline-offset:4px}.band i{display:block;height:100%;width:0;background:var(--ink);transition:width .35s ease-out}
+#tip{color:var(--shade);font-size:18px;max-width:44ch;min-height:3.3em;margin-top:8px}.paper{background:var(--paper);color:var(--ink);max-width:680px;padding:40px 48px;text-align:left;border:10px double var(--red)}h2{font:32px/1.4 CurfewDisplay;margin:0 0 16px}p{margin:0 0 24px;word-break:keep-all}
+button{font:22px CurfewDisplay;background:none;color:inherit;padding:12px 24px;border:0;border-bottom:3px solid var(--red);cursor:pointer}button:focus-visible{outline:3px solid #79a2ff;outline-offset:5px}button:hover{background:#c8432e18}#language{position:absolute;right:48px;bottom:32px;display:flex;gap:24px}#language button{font:18px CurfewBody;padding:8px}[hidden]{display:none!important}@media(prefers-reduced-motion:reduce){.band i{transition:none}}
+</style></head><body>
+<svg width="0" height="0" aria-hidden="true"><filter id="rough"><feTurbulence type="fractalNoise" baseFrequency=".025 .4" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="2"/></filter></svg>
+<main id="stage"><canvas id="unity-canvas" width="1920" height="1080" tabindex="0"></canvas>
+<section id="loading" class="overlay"><div class="lockup"><h1 class="title" data-key="title.name"></h1><span class="seal" data-key="title.seal"></span></div><div class="edition" data-key="title.edition"></div><div class="band" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i></i></div><span id="loading-label" data-key="sys.loading"></span><p id="tip"></p></section>
+<section id="mobile" class="overlay" hidden><div class="paper"><h2 data-key="sys.mobile"></h2><p data-key="sys.mobile.body"></p></div></section>
+<section id="failed" class="overlay" hidden><div class="paper"><h2 data-key="sys.error"></h2><p id="error-text"></p><button id="reload" data-key="sys.reload"></button></div></section>
+<div id="language"><button data-lang="ko" data-key="menu.korean"></button><button data-lang="en" data-key="menu.english"></button></div></main>
+<script>
+const canvas=document.querySelector("#unity-canvas"),loading=document.querySelector("#loading");
+const started=performance.now();window.curfewLoad={started,readyMs:null};let table={},language="ko",tipIndex=0,timer;
+const L=key=>(table[key]||{})[language]||"";
+function localize(){document.documentElement.lang=language;document.querySelectorAll("[data-key]").forEach(e=>e.textContent=L(e.dataset.key));canvas.setAttribute("aria-label",L("title.name"));nextTip();}
+function nextTip(){document.querySelector("#tip").textContent=L("sys.tip"+(tipIndex++%3+1));}
+document.querySelectorAll("[data-lang]").forEach(e=>e.onclick=()=>{language=e.dataset.lang;localize();});
+function fail(error){clearInterval(timer);loading.hidden=true;document.querySelector("#failed").hidden=false;document.querySelector("#error-text").textContent=error||L("sys.error");}
+document.querySelector("#reload").onclick=()=>location.reload();
+const config={dataUrl:"Build/WebPlaytest.data.unityweb",frameworkUrl:"Build/WebPlaytest.framework.js.unityweb",codeUrl:"Build/WebPlaytest.wasm.unityweb",streamingAssetsUrl:"StreamingAssets",companyName:"DefaultCompany",productName:"Curfew Playtest",productVersion:"0.1.0",matchWebGLToCanvasSize:true,devicePixelRatio:Math.min(window.devicePixelRatio||1,1.5),showBanner:(message,type)=>{if(type==="error")fail(message);}};
+async function start(){const response=await fetch("StreamingAssets/localization.json");if(!response.ok)throw new Error("localization.json");const catalog=await response.json();table=Object.fromEntries(catalog.entries.map(e=>[e.key,e]));localize();
+const phone=matchMedia("(pointer:coarse)").matches&&!matchMedia("(any-pointer:fine)").matches;if(phone){loading.hidden=true;document.querySelector("#mobile").hidden=false;return;}
+timer=setInterval(nextTip,6000);const loader=document.createElement("script");loader.src="Build/WebPlaytest.loader.js";
+loader.onload=()=>createUnityInstance(canvas,config,p=>{document.querySelector(".band i").style.width=(p*100)+"%";document.querySelector(".band").setAttribute("aria-valuenow",Math.round(p*100));}).then(instance=>{window.curfewInstance=instance;clearInterval(timer);loading.hidden=true;document.querySelector("#language").hidden=true;canvas.focus();instance.SendMessage("CurfewApp","SetLanguage",language);window.curfewLoad.readyMs=performance.now()-started;}).catch(e=>fail(String(e)));loader.onerror=()=>fail(L("sys.error"));document.body.appendChild(loader);}
+start().catch(e=>fail(String(e)));canvas.addEventListener("contextmenu",e=>e.preventDefault());
+function lostFocus(){if(window.curfewInstance)window.curfewInstance.SendMessage("CurfewApp","OnBrowserFocus","0");}window.addEventListener("blur",lostFocus);document.addEventListener("visibilitychange",()=>{if(document.hidden)lostFocus();});
+window.curfewDownload=replay=>{const value=replay?window.curfewReplay:window.curfewResult;if(!value)return;const url=URL.createObjectURL(new Blob([JSON.stringify(value,null,2)],{type:"application/json"}));const a=document.createElement("a");a.href=url;a.download=replay?"curfew-input-replay.json":"curfew-result.json";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+</script></body></html>

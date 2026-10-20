@@ -1,0 +1,670 @@
+{
+  "entries": [
+    {
+      "key": "title.start",
+      "ko": "골목으로 나간다",
+      "en": "Into the alley",
+      "role": "display"
+    },
+    {
+      "key": "title.controls",
+      "ko": "조작 보기",
+      "en": "Controls",
+      "role": "display"
+    },
+    {
+      "key": "title.settings",
+      "ko": "설정",
+      "en": "Settings",
+      "role": "display"
+    },
+    {
+      "key": "title.lore1",
+      "ko": "인정(人定) · 종이 스물여덟 번 울렸다",
+      "en": "The curfew bell has rung twenty-eight times",
+      "role": "display"
+    },
+    {
+      "key": "title.lore2",
+      "ko": "이제 밤길은 망자의 것이다",
+      "en": "The night streets now belong to the dead",
+      "role": "display"
+    },
+    {
+      "key": "hud.soul.enter",
+      "ko": "넋이 나갔다",
+      "en": "Your soul slipped out",
+      "role": "body"
+    },
+    {
+      "key": "hud.soul.goal",
+      "ko": "넋 조각을 모아 몸으로 돌아가라",
+      "en": "Gather your soul pieces, then return to your body",
+      "role": "body"
+    },
+    {
+      "key": "hud.soul.return",
+      "ko": "몸으로 돌아가라",
+      "en": "Return to your body",
+      "role": "body"
+    },
+    {
+      "key": "hud.soul.bell",
+      "ko": "방울 소리가 가까워진다",
+      "en": "The bell grows louder",
+      "role": "body"
+    },
+    {
+      "key": "hud.capture",
+      "ko": "넋 붙잡기",
+      "en": "Catch soul",
+      "role": "body"
+    },
+    {
+      "key": "hud.soul.warn",
+      "ko": "붙잡히면 끝이다",
+      "en": "If it's caught, it's over",
+      "role": "body"
+    },
+    {
+      "key": "hud.encounter_n",
+      "ko": "{n}째 골목",
+      "en": "Alley {n}",
+      "role": "body"
+    },
+    {
+      "key": "result.title",
+      "ko": "순라 일지",
+      "en": "Patrol Log",
+      "role": "body"
+    },
+    {
+      "key": "result.time",
+      "ko": "밤을 버틴 시간",
+      "en": "Time on patrol",
+      "role": "body"
+    },
+    {
+      "key": "result.exact",
+      "ko": "맑은 울림 (정확 패링)",
+      "en": "Clear rings (perfect parries)",
+      "role": "body"
+    },
+    {
+      "key": "result.late",
+      "ko": "늦은 칼 (지연)",
+      "en": "Late blades",
+      "role": "body"
+    },
+    {
+      "key": "result.hit",
+      "ko": "맞음",
+      "en": "Hits taken",
+      "role": "body"
+    },
+    {
+      "key": "result.freed",
+      "ko": "풀어 준 망자 (처형)",
+      "en": "Spirits released",
+      "role": "body"
+    },
+    {
+      "key": "result.soul_time",
+      "ko": "넋이 나간 시간",
+      "en": "Time out of body",
+      "role": "body"
+    },
+    {
+      "key": "result.return_time",
+      "ko": "몸으로 돌아오기까지",
+      "en": "Time to return",
+      "role": "body"
+    },
+    {
+      "key": "result.end.win",
+      "ko": "파루 종이 서른세 번 울렸다. 통금이 풀린다.",
+      "en": "The dawn bell rings thirty-three times. Curfew lifts.",
+      "role": "body"
+    },
+    {
+      "key": "result.end.caught",
+      "ko": "넋이 붙잡혔다.",
+      "en": "Your soul was caught.",
+      "role": "body"
+    },
+    {
+      "key": "result.end.down",
+      "ko": "몸이 쓰러졌다.",
+      "en": "Your body fell.",
+      "role": "body"
+    },
+    {
+      "key": "result.grade.tong",
+      "ko": "통(通) · 막힘없이 지나갔다",
+      "en": "Pass with honors",
+      "role": "display"
+    },
+    {
+      "key": "result.grade.yak",
+      "ko": "약(略) · 지나갔다",
+      "en": "Pass",
+      "role": "display"
+    },
+    {
+      "key": "result.grade.bul",
+      "ko": "불(不) · 밤을 넘기지 못했다",
+      "en": "Fail",
+      "role": "display"
+    },
+    {
+      "key": "sys.mobile",
+      "ko": "PC 브라우저에서 열어 주세요",
+      "en": "Please open this on a PC browser",
+      "role": "body"
+    },
+    {
+      "key": "result.retry",
+      "ko": "다시 순라를 돈다",
+      "en": "Patrol again",
+      "role": "body"
+    },
+    {
+      "key": "result.download",
+      "ko": "기록 내려받기",
+      "en": "Download record",
+      "role": "body"
+    },
+    {
+      "key": "font.3",
+      "ko": "한자 보조 · 저작권과 이용 허락",
+      "en": "Hanja supplement · copyright and license",
+      "role": "body"
+    },
+    {
+      "key": "font.0",
+      "ko": "송명 · 저작권과 이용 허락",
+      "en": "Song Myung · copyright and license",
+      "role": "body"
+    },
+    {
+      "key": "font.1",
+      "ko": "검은고딕 · 저작권과 이용 허락",
+      "en": "Black Han Sans · copyright and license",
+      "role": "body"
+    },
+    {
+      "key": "font.2",
+      "ko": "프리텐다드 · 저작권과 이용 허락",
+      "en": "Pretendard · copyright and license",
+      "role": "body"
+    },
+    {
+      "key": "title.name",
+      "ko": "통금",
+      "en": "통금",
+      "role": "display"
+    },
+    {
+      "key": "title.vertical",
+      "ko": "통\n금",
+      "en": "통\n금",
+      "role": "display"
+    },
+    {
+      "key": "title.edition",
+      "ko": "CURFEW PLAYTEST",
+      "en": "CURFEW PLAYTEST",
+      "role": "display"
+    },
+    {
+      "key": "title.seal",
+      "ko": "순라",
+      "en": "PATROL",
+      "role": "display"
+    },
+    {
+      "key": "title.latin",
+      "ko": "",
+      "en": "C U R F E W",
+      "role": "display"
+    },
+    {
+      "key": "enemy.egg",
+      "ko": "달걀귀신",
+      "en": "Egg Ghost",
+      "role": "display"
+    },
+    {
+      "key": "enemy.broom",
+      "ko": "빗자루 도깨비",
+      "en": "Broom Dokkaebi",
+      "role": "display"
+    },
+    {
+      "key": "menu.resume",
+      "ko": "계속",
+      "en": "Continue",
+      "role": "display"
+    },
+    {
+      "key": "menu.restart",
+      "ko": "처음부터",
+      "en": "Start over",
+      "role": "display"
+    },
+    {
+      "key": "menu.back",
+      "ko": "돌아가기",
+      "en": "Back",
+      "role": "display"
+    },
+    {
+      "key": "menu.paused",
+      "ko": "잠시 멈춤",
+      "en": "A moment of stillness",
+      "role": "display"
+    },
+    {
+      "key": "menu.language",
+      "ko": "언어",
+      "en": "Language",
+      "role": "body"
+    },
+    {
+      "key": "menu.korean",
+      "ko": "한국어",
+      "en": "Korean",
+      "role": "body"
+    },
+    {
+      "key": "menu.english",
+      "ko": "영어",
+      "en": "English",
+      "role": "body"
+    },
+    {
+      "key": "menu.sfx",
+      "ko": "의성어 글자",
+      "en": "Impact lettering",
+      "role": "body"
+    },
+    {
+      "key": "menu.shake",
+      "ko": "흔들림",
+      "en": "Motion",
+      "role": "body"
+    },
+    {
+      "key": "menu.flash",
+      "ko": "섬광",
+      "en": "Flashes",
+      "role": "body"
+    },
+    {
+      "key": "menu.info",
+      "ko": "정보 · 글꼴 이용 허락",
+      "en": "About · Font licenses",
+      "role": "body"
+    },
+    {
+      "key": "menu.on",
+      "ko": "켬",
+      "en": "On",
+      "role": "body"
+    },
+    {
+      "key": "menu.off",
+      "ko": "끔",
+      "en": "Off",
+      "role": "body"
+    },
+    {
+      "key": "sys.keyboard",
+      "ko": "키보드·마우스 준비됨",
+      "en": "Keyboard and mouse ready",
+      "role": "body"
+    },
+    {
+      "key": "sys.pad",
+      "ko": "패드 준비됨",
+      "en": "Gamepad ready",
+      "role": "body"
+    },
+    {
+      "key": "sys.disconnected",
+      "ko": "패드 연결이 끊겼어요. 다시 연결하거나 키보드로 계속하세요.",
+      "en": "Controller disconnected. Reconnect or continue with the keyboard.",
+      "role": "body"
+    },
+    {
+      "key": "sys.focus",
+      "ko": "화면을 벗어나 잠시 멈췄어요.",
+      "en": "Paused while the game was out of focus.",
+      "role": "body"
+    },
+    {
+      "key": "sys.loading",
+      "ko": "골목을 준비하고 있어요",
+      "en": "Preparing the alley",
+      "role": "body"
+    },
+    {
+      "key": "sys.error",
+      "ko": "게임을 준비하지 못했어요. 다시 불러와 주세요.",
+      "en": "The game could not be prepared. Please reload.",
+      "role": "body"
+    },
+    {
+      "key": "sys.mobile.body",
+      "ko": "이 시험판은 키보드·마우스나 패드가 필요해요.",
+      "en": "This playtest requires a keyboard and mouse or a gamepad.",
+      "role": "body"
+    },
+    {
+      "key": "sys.reload",
+      "ko": "다시 불러오기",
+      "en": "Reload",
+      "role": "body"
+    },
+    {
+      "key": "sys.fullscreen",
+      "ko": "전체 화면",
+      "en": "Fullscreen",
+      "role": "body"
+    },
+    {
+      "key": "sys.tip1",
+      "ko": "금속음과 불꽃을 보고 받아쳐라.",
+      "en": "Listen for the clang. Watch for the spark.",
+      "role": "body"
+    },
+    {
+      "key": "sys.tip2",
+      "ko": "발밑의 붉은 인장을 보면 뛰거나 피해라.",
+      "en": "A red seal at the feet means jump or dodge.",
+      "role": "body"
+    },
+    {
+      "key": "sys.tip3",
+      "ko": "넋 조각을 다 모았다면 몸으로 돌아가라.",
+      "en": "With every soul piece found, return to your body.",
+      "role": "body"
+    },
+    {
+      "key": "sys.info",
+      "ko": "글꼴의 저작권 및 이용 허락 전문은 아래에서 확인할 수 있어요.",
+      "en": "Font copyright notices and full license texts are available below.",
+      "role": "body"
+    },
+    {
+      "key": "action.attack",
+      "ko": "베기",
+      "en": "Strike",
+      "role": "body"
+    },
+    {
+      "key": "action.defense",
+      "ko": "받아치기 · 유지해서 막기",
+      "en": "Parry · hold to guard",
+      "role": "body"
+    },
+    {
+      "key": "action.dash",
+      "ko": "피하기 · 유지해서 달리기",
+      "en": "Dodge · hold to run",
+      "role": "body"
+    },
+    {
+      "key": "action.jump",
+      "ko": "뛰기",
+      "en": "Jump",
+      "role": "body"
+    },
+    {
+      "key": "action.lock",
+      "ko": "겨누기",
+      "en": "Lock on",
+      "role": "body"
+    },
+    {
+      "key": "action.move",
+      "ko": "움직이기",
+      "en": "Move",
+      "role": "body"
+    },
+    {
+      "key": "action.look",
+      "ko": "둘러보기",
+      "en": "Look",
+      "role": "body"
+    },
+    {
+      "key": "action.switch",
+      "ko": "대상 바꾸기",
+      "en": "Switch target",
+      "role": "body"
+    },
+    {
+      "key": "action.pause",
+      "ko": "잠시 멈추기",
+      "en": "Pause",
+      "role": "body"
+    },
+    {
+      "key": "control.move.kb",
+      "ko": "W A S D",
+      "en": "W A S D",
+      "role": "body"
+    },
+    {
+      "key": "control.move.pad",
+      "ko": "왼쪽 스틱",
+      "en": "Left stick",
+      "role": "body"
+    },
+    {
+      "key": "control.look.kb",
+      "ko": "마우스",
+      "en": "Mouse",
+      "role": "body"
+    },
+    {
+      "key": "control.look.pad",
+      "ko": "오른쪽 스틱",
+      "en": "Right stick",
+      "role": "body"
+    },
+    {
+      "key": "control.switch.kb",
+      "ko": "휠",
+      "en": "Wheel",
+      "role": "body"
+    },
+    {
+      "key": "control.switch.pad",
+      "ko": "오른쪽 스틱 튕기기",
+      "en": "Flick right stick",
+      "role": "body"
+    },
+    {
+      "key": "control.pause.kb",
+      "ko": "Esc",
+      "en": "Esc",
+      "role": "body"
+    },
+    {
+      "key": "control.pause.pad",
+      "ko": "메뉴",
+      "en": "Menu",
+      "role": "body"
+    },
+    {
+      "key": "control.lock.pad",
+      "ko": "R3",
+      "en": "R3",
+      "role": "body"
+    },
+    {
+      "key": "hud.soul.pieces",
+      "ko": "넋 조각",
+      "en": "Soul pieces",
+      "role": "body"
+    },
+    {
+      "key": "hud.encounter.1",
+      "ko": "첫째 골목",
+      "en": "First alley",
+      "role": "display"
+    },
+    {
+      "key": "hud.encounter.2",
+      "ko": "둘째 골목",
+      "en": "Second alley",
+      "role": "display"
+    },
+    {
+      "key": "hud.encounter.3",
+      "ko": "셋째 골목",
+      "en": "Third alley",
+      "role": "display"
+    },
+    {
+      "key": "hud.encounter.4",
+      "ko": "넷째 골목",
+      "en": "Fourth alley",
+      "role": "display"
+    },
+    {
+      "key": "hud.encounter.5",
+      "ko": "다섯째 골목",
+      "en": "Fifth alley",
+      "role": "display"
+    },
+    {
+      "key": "hud.encounter.6",
+      "ko": "여섯째 골목",
+      "en": "Sixth alley",
+      "role": "display"
+    },
+    {
+      "key": "sfx.clang",
+      "ko": "쨍!",
+      "en": "CLANG!",
+      "role": "impact"
+    },
+    {
+      "key": "sfx.thwack",
+      "ko": "퍽",
+      "en": "THWACK",
+      "role": "impact"
+    },
+    {
+      "key": "sfx.whoosh",
+      "ko": "휙",
+      "en": "WHOOSH",
+      "role": "impact"
+    },
+    {
+      "key": "result.vertical",
+      "ko": "순\n라\n일\n지",
+      "en": "PATROL\nLOG",
+      "role": "display"
+    },
+    {
+      "key": "result.hanja",
+      "ko": "巡\n邏\n日\n誌",
+      "en": "",
+      "role": "body"
+    },
+    {
+      "key": "result.grade.mark.tong",
+      "ko": "통",
+      "en": "PASS",
+      "role": "display"
+    },
+    {
+      "key": "result.grade.mark.yak",
+      "ko": "약",
+      "en": "PASS",
+      "role": "display"
+    },
+    {
+      "key": "result.grade.mark.bul",
+      "ko": "불",
+      "en": "FAIL",
+      "role": "display"
+    },
+    {
+      "key": "result.early",
+      "ko": "이른 칼 (조기)",
+      "en": "Early blades",
+      "role": "body"
+    },
+    {
+      "key": "result.end.timeout",
+      "ko": "밤이 깊었다. 순라를 마친다.",
+      "en": "The night deepens. This patrol ends.",
+      "role": "body"
+    },
+    {
+      "key": "result.none",
+      "ko": "없음",
+      "en": "None",
+      "role": "body"
+    },
+    {
+      "key": "result.incomplete",
+      "ko": "미완료",
+      "en": "Incomplete",
+      "role": "body"
+    },
+    {
+      "key": "result.seconds",
+      "ko": "{0}초",
+      "en": "{0}s",
+      "role": "body"
+    },
+    {
+      "key": "result.duration",
+      "ko": "{0}분 {1}초",
+      "en": "{0}m {1}s",
+      "role": "body"
+    },
+    {
+      "key": "result.detail",
+      "ko": "넋의 기록",
+      "en": "Soul records",
+      "role": "body"
+    },
+    {
+      "key": "result.record",
+      "ko": "넋 {0} · 여섯 조각 {1} · 붙잡힘 {2}",
+      "en": "Soul {0} · six pieces {1} · caught {2}",
+      "role": "body"
+    },
+    {
+      "key": "result.actor.player",
+      "ko": "나",
+      "en": "You",
+      "role": "body"
+    },
+    {
+      "key": "result.actor.enemy",
+      "ko": "망자 {0}",
+      "en": "Spirit {0}",
+      "role": "body"
+    },
+    {
+      "key": "result.replay",
+      "ko": "입력 기록 내려받기",
+      "en": "Download input replay",
+      "role": "body"
+    },
+    {
+      "key": "glyph.chars",
+      "ko": "0123456789 .,:;!?-+/%()[]{}ABFLMRSTWXYabcefghiklmnostuy",
+      "en": "0123456789 .,:;!?-+/%()[]{}ABFLMRSTWXYabcefghiklmnostuy",
+      "role": "body"
+    }
+  ]
+}
