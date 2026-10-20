@@ -451,6 +451,24 @@
       "role": "body"
     },
     {
+      "key": "hud.guide.defense",
+      "ko": "받아치기 · 막기",
+      "en": "Parry · Guard",
+      "role": "body"
+    },
+    {
+      "key": "hud.guide.dash",
+      "ko": "피하기 · 달리기",
+      "en": "Dodge · Run",
+      "role": "body"
+    },
+    {
+      "key": "menu.guide",
+      "ko": "조작키 보이기",
+      "en": "Show controls",
+      "role": "body"
+    },
+    {
       "key": "control.move.kb",
       "ko": "W A S D",
       "en": "W A S D",
