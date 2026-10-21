@@ -683,6 +683,42 @@
       "ko": "0123456789 .,:;!?-+/%()[]{}ABFLMRSTWXYabcefghiklmnostuy",
       "en": "0123456789 .,:;!?-+/%()[]{}ABFLMRSTWXYabcefghiklmnostuy",
       "role": "body"
+    },
+    {
+      "key": "hint.parry",
+      "ko": "닿기 직전 누르면 받아치기, 누른 채 두면 막기다",
+      "en": "Tap just before impact to parry; hold to block.",
+      "role": "display"
+    },
+    {
+      "key": "hint.combo",
+      "ko": "공격을 이어 누르면 세 번까지 이어 벤다",
+      "en": "Press repeatedly to chain up to three slashes.",
+      "role": "display"
+    },
+    {
+      "key": "hint.lock",
+      "ko": "겨누기를 켜면 상대가 늘 화면에 잡힌다",
+      "en": "Lock on to keep your foe on screen.",
+      "role": "display"
+    },
+    {
+      "key": "hint.delay",
+      "ko": "멈췄다가 늦게 내려친다. 무기 빛과 소리 뒤에 온다",
+      "en": "It pauses, then strikes late, right after the glint and clang.",
+      "role": "display"
+    },
+    {
+      "key": "hint.seal",
+      "ko": "막을 수 없다. 뛰기·피하기·받아치기로 넘겨라",
+      "en": "Cannot be blocked. Jump, dodge, or parry instead.",
+      "role": "display"
+    },
+    {
+      "key": "hint.capture",
+      "ko": "넋에 가까이 다가가 붙잡으면 처형된다",
+      "en": "Approach the loose soul and seize it to execute.",
+      "role": "display"
     }
   ]
 }
