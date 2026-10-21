@@ -1,5 +1,5 @@
 {
-  "version": "v1.3-20261021",
+  "version": "v1.4-20261022",
   "tickRate": 50,
   "seed": 261020,
   "parryTicks": 7,
@@ -73,5 +73,15 @@
   "dashChainGapTicks": 12,
   "dashDefenseFrom": 9,
   "jumpLandTicks": 6,
-  "guardBreakPosture": 40
+  "guardBreakPosture": 40,
+  "firstGraceTicks": 250,
+  "lockLoseTicks": 75,
+  "finaleChain": 3,
+  "aiRetreatTicks": 22,
+  "lockRange": 18.0,
+  "aiBandMin": 2.4,
+  "aiBandMax": 3.6,
+  "aiStrafeSpeed": 0.42,
+  "watchMin": 5.0,
+  "watchMax": 7.5
 }
