@@ -719,6 +719,24 @@
       "ko": "넋에 가까이 다가가 붙잡으면 처형된다",
       "en": "Approach the loose soul and seize it to execute.",
       "role": "display"
+    },
+    {
+      "key": "hint.dodge",
+      "ko": "짧게 누르면 순간 빠져나가고, 길게 누르면 달린다",
+      "en": "Tap to dodge with brief invincibility; hold to run.",
+      "role": "display"
+    },
+    {
+      "key": "hint.switch",
+      "ko": "누르면 기다리는 다른 적을 바꿔 겨눈다",
+      "en": "Press to switch lock-on to another waiting enemy.",
+      "role": "display"
+    },
+    {
+      "key": "menu.rumble",
+      "ko": "진동",
+      "en": "Vibration",
+      "role": "display"
     }
   ]
 }
