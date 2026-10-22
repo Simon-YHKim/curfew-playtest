@@ -737,6 +737,1098 @@
       "ko": "진동",
       "en": "Vibration",
       "role": "display"
+    },
+    {
+      "key": "title.single",
+      "ko": "밤거리로 나간다",
+      "en": "Into the night streets",
+      "role": "display"
+    },
+    {
+      "key": "title.practice",
+      "ko": "골목에서 익힌다",
+      "en": "Practice in the alley",
+      "role": "display"
+    },
+    {
+      "key": "title.multi",
+      "ko": "합동 순라",
+      "en": "Joint patrol",
+      "role": "display"
+    },
+    {
+      "key": "sys.interrupted",
+      "ko": "지난 순라가 도중에 끊겨 거둔 것을 모두 잃었다.",
+      "en": "Your last patrol was cut off. What you found on it is gone.",
+      "role": "body"
+    },
+    {
+      "key": "menu.abandon",
+      "ko": "순라 포기",
+      "en": "Abandon patrol",
+      "role": "display"
+    },
+    {
+      "key": "prep.title",
+      "ko": "순라 채비",
+      "en": "Gear up",
+      "role": "display"
+    },
+    {
+      "key": "prep.sub",
+      "ko": "밤거리에 들고 나갈 무구와 소모품을 고른다.",
+      "en": "Choose what to carry into the night.",
+      "role": "body"
+    },
+    {
+      "key": "prep.weapon",
+      "ko": "무기",
+      "en": "Weapon",
+      "role": "display"
+    },
+    {
+      "key": "prep.armor",
+      "ko": "갑옷",
+      "en": "Armor",
+      "role": "display"
+    },
+    {
+      "key": "prep.accessory",
+      "ko": "장신구",
+      "en": "Charm",
+      "role": "display"
+    },
+    {
+      "key": "prep.carry.yakgwa",
+      "ko": "챙길 약과",
+      "en": "Yakgwa to carry",
+      "role": "display"
+    },
+    {
+      "key": "prep.carry.cheongsim",
+      "ko": "챙길 청심환",
+      "en": "Cheongsimhwan to carry",
+      "role": "display"
+    },
+    {
+      "key": "prep.stock",
+      "ko": "보관함",
+      "en": "Stored",
+      "role": "body"
+    },
+    {
+      "key": "prep.special",
+      "ko": "방향별 특수 행동",
+      "en": "Special moves by direction",
+      "role": "display"
+    },
+    {
+      "key": "prep.dir.neutral",
+      "ko": "제자리",
+      "en": "Neutral",
+      "role": "display"
+    },
+    {
+      "key": "prep.dir.forward",
+      "ko": "앞",
+      "en": "Forward",
+      "role": "display"
+    },
+    {
+      "key": "prep.dir.back",
+      "ko": "뒤",
+      "en": "Back",
+      "role": "display"
+    },
+    {
+      "key": "prep.weight",
+      "ko": "차림 무게",
+      "en": "Load",
+      "role": "display"
+    },
+    {
+      "key": "prep.weight.light",
+      "ko": "빠르고 멀리 피하지만 맞으면 더 크게 다친다.",
+      "en": "Quick with long dodges, but hits hurt more.",
+      "role": "body"
+    },
+    {
+      "key": "prep.weight.heavy",
+      "ko": "맞아도 덜 다치지만 걸음이 느리고 짧게 피한다.",
+      "en": "Hits hurt less, but you walk slower and dodge shorter.",
+      "role": "body"
+    },
+    {
+      "key": "prep.rule",
+      "ko": "판을 포기하거나 도중에 게임이 꺼지면 이 판에서 얻은 것을 잃는다. 쓰러지거나 우두머리를 베면 가지고 돌아온다.",
+      "en": "Abandon the patrol or close the game midway and you lose what you found. Fall, or cut down the master, and you keep it.",
+      "role": "body"
+    },
+    {
+      "key": "prep.start",
+      "ko": "밤거리로 나선다",
+      "en": "Step into the night",
+      "role": "display"
+    },
+    {
+      "key": "item.none",
+      "ko": "장신구 없음",
+      "en": "No charm",
+      "role": "display"
+    },
+    {
+      "key": "item.yakgwa",
+      "ko": "약과",
+      "en": "Yakgwa",
+      "role": "display"
+    },
+    {
+      "key": "item.cheongsim",
+      "ko": "청심환",
+      "en": "Cheongsimhwan",
+      "role": "display"
+    },
+    {
+      "key": "item.longsword",
+      "ko": "장검",
+      "en": "Longsword",
+      "role": "display"
+    },
+    {
+      "key": "item.dagger",
+      "ko": "단검",
+      "en": "Dagger",
+      "role": "display"
+    },
+    {
+      "key": "item.light",
+      "ko": "순라 군복",
+      "en": "Patrol uniform",
+      "role": "display"
+    },
+    {
+      "key": "item.heavy",
+      "ko": "무쇠 갑옷",
+      "en": "Iron armor",
+      "role": "display"
+    },
+    {
+      "key": "item.blue-steel",
+      "ko": "푸른 강철 장검",
+      "en": "Blue steel longsword",
+      "role": "display"
+    },
+    {
+      "key": "item.plum-dagger",
+      "ko": "매화 단검",
+      "en": "Plum blossom dagger",
+      "role": "display"
+    },
+    {
+      "key": "item.silk-coat",
+      "ko": "비단 군복",
+      "en": "Silk uniform",
+      "role": "display"
+    },
+    {
+      "key": "item.iron-scale",
+      "ko": "쇠비늘 갑옷",
+      "en": "Iron scale armor",
+      "role": "display"
+    },
+    {
+      "key": "item.norigae",
+      "ko": "노리개",
+      "en": "Norigae",
+      "role": "display"
+    },
+    {
+      "key": "item.knot-bracelet",
+      "ko": "매듭 팔찌",
+      "en": "Knot bracelet",
+      "role": "display"
+    },
+    {
+      "key": "item.haetae-seal",
+      "ko": "해태 인장",
+      "en": "Haetae seal",
+      "role": "display"
+    },
+    {
+      "key": "item.haechi-burst",
+      "ko": "해치의 일격",
+      "en": "Haechi's strike",
+      "role": "display"
+    },
+    {
+      "key": "item.tiger-roar",
+      "ko": "산군의 포효",
+      "en": "Mountain lord's roar",
+      "role": "display"
+    },
+    {
+      "key": "item.thunder-drum",
+      "ko": "천둥 북",
+      "en": "Thunder drum",
+      "role": "display"
+    },
+    {
+      "key": "item.ember-field",
+      "ko": "불씨 자리",
+      "en": "Ember ground",
+      "role": "display"
+    },
+    {
+      "key": "item.goblin-fire",
+      "ko": "도깨비불",
+      "en": "Goblin fire",
+      "role": "display"
+    },
+    {
+      "key": "special.pause-slash",
+      "ko": "뜸 들여 베기",
+      "en": "Held slash",
+      "role": "display"
+    },
+    {
+      "key": "special.quick-cut",
+      "ko": "재빠른 베기",
+      "en": "Quick cut",
+      "role": "display"
+    },
+    {
+      "key": "special.step-thrust",
+      "ko": "물러나 찌르기",
+      "en": "Step-back thrust",
+      "role": "display"
+    },
+    {
+      "key": "choice.title",
+      "ko": "강화 고르기",
+      "en": "Choose a boon",
+      "role": "display"
+    },
+    {
+      "key": "choice.sub",
+      "ko": "고른 강화는 이번 순라가 끝나면 사라진다.",
+      "en": "Boons last only for this patrol.",
+      "role": "body"
+    },
+    {
+      "key": "choice.pick",
+      "ko": "고른다",
+      "en": "Choose",
+      "role": "display"
+    },
+    {
+      "key": "choice.later",
+      "ko": "닫아 두었다가 나중에 골라도 된다.",
+      "en": "You can close this and choose later.",
+      "role": "body"
+    },
+    {
+      "key": "upgrade.parry-pressure",
+      "ko": "거센 받아치기",
+      "en": "Fierce parry",
+      "role": "body"
+    },
+    {
+      "key": "upgrade.parry-pressure.desc",
+      "ko": "받아치기로 상대의 체간을 더 크게 흔든다.",
+      "en": "Parries shake the foe's posture harder.",
+      "role": "body"
+    },
+    {
+      "key": "upgrade.counter-chain",
+      "ko": "되받아 베기",
+      "en": "Riposte",
+      "role": "body"
+    },
+    {
+      "key": "upgrade.counter-chain.desc",
+      "ko": "받아친 직후 이어지는 베기가 더 매서워진다.",
+      "en": "The cut right after a parry bites deeper.",
+      "role": "body"
+    },
+    {
+      "key": "upgrade.keen-edge",
+      "ko": "시퍼런 칼날",
+      "en": "Keen edge",
+      "role": "body"
+    },
+    {
+      "key": "upgrade.keen-edge.desc",
+      "ko": "칼로 베어 넘길 때 더 깊은 상처를 입힌다.",
+      "en": "Your cuts wound deeper.",
+      "role": "body"
+    },
+    {
+      "key": "upgrade.steady-stance",
+      "ko": "굳건한 보법",
+      "en": "Steady stance",
+      "role": "body"
+    },
+    {
+      "key": "upgrade.steady-stance.desc",
+      "ko": "공격을 맞아도 체간이 덜 흔들린다.",
+      "en": "Hits shake your posture less.",
+      "role": "body"
+    },
+    {
+      "key": "upgrade.light-feet",
+      "ko": "가벼운 발걸음",
+      "en": "Light feet",
+      "role": "body"
+    },
+    {
+      "key": "upgrade.light-feet.desc",
+      "ko": "걸음이 빨라지고 피하기를 더 자주 쓸 수 있다.",
+      "en": "Walk a little faster and dodge more often.",
+      "role": "body"
+    },
+    {
+      "key": "upgrade.vigor",
+      "ko": "왕성한 기력",
+      "en": "Vigor",
+      "role": "body"
+    },
+    {
+      "key": "upgrade.vigor.desc",
+      "ko": "체력 한계가 늘어나고 지금 체력도 조금 돌아온다.",
+      "en": "Raises your health limit and heals a little.",
+      "role": "body"
+    },
+    {
+      "key": "upgrade.soul-gathering",
+      "ko": "넋 끌어모으기",
+      "en": "Soul gathering",
+      "role": "body"
+    },
+    {
+      "key": "upgrade.soul-gathering.desc",
+      "ko": "넋이 빠져나갔을 때 더 먼 곳의 조각까지 거둔다.",
+      "en": "As a soul, pick up pieces from farther away.",
+      "role": "body"
+    },
+    {
+      "key": "upgrade.guard-training",
+      "ko": "빈틈없는 막기",
+      "en": "Sure guard",
+      "role": "body"
+    },
+    {
+      "key": "upgrade.guard-training.desc",
+      "ko": "칼로 막아 낼 때 체간이 덜 흔들린다.",
+      "en": "Blocking shakes your posture less.",
+      "role": "body"
+    },
+    {
+      "key": "down.title",
+      "ko": "쓰러졌다",
+      "en": "You fell",
+      "role": "display"
+    },
+    {
+      "key": "down.body",
+      "ko": "문 앞 청사초롱이 아직 밝혀져 있다. 다시 일어나 맞설 수 있다.",
+      "en": "The lantern at the gate still burns. You can rise and face it again.",
+      "role": "body"
+    },
+    {
+      "key": "down.body.none",
+      "ko": "문 앞 청사초롱이 꺼졌다. 더는 다시 맞설 수 없다.",
+      "en": "The lantern at the gate has gone out. You cannot face it again.",
+      "role": "body"
+    },
+    {
+      "key": "down.retry",
+      "ko": "다시 맞선다",
+      "en": "Face it again",
+      "role": "display"
+    },
+    {
+      "key": "down.giveup",
+      "ko": "거두어 돌아간다",
+      "en": "Return with your finds",
+      "role": "display"
+    },
+    {
+      "key": "abandon.title",
+      "ko": "순라 포기",
+      "en": "Abandon patrol",
+      "role": "display"
+    },
+    {
+      "key": "abandon.body",
+      "ko": "지금 물러나면 이번 순라에서 거둔 것을 모두 잃는다.",
+      "en": "Leave now and you lose everything you found on this patrol.",
+      "role": "body"
+    },
+    {
+      "key": "abandon.yes",
+      "ko": "포기한다",
+      "en": "Abandon",
+      "role": "display"
+    },
+    {
+      "key": "settle.end.victory",
+      "ko": "우두머리를 베자 멀리서 파루 종이 울렸다.",
+      "en": "You cut down the master; the dawn bell rings in the distance.",
+      "role": "body"
+    },
+    {
+      "key": "settle.end.down",
+      "ko": "밤이 가시기 전에 칼을 놓치고 쓰러졌다.",
+      "en": "You fell before the night was over.",
+      "role": "body"
+    },
+    {
+      "key": "settle.end.abandon",
+      "ko": "순라를 접고 밤거리에서 물러났다.",
+      "en": "You gave up the patrol and left the streets.",
+      "role": "body"
+    },
+    {
+      "key": "settle.end.timeout",
+      "ko": "밤이 너무 깊어져 순라가 끝났다.",
+      "en": "The night grew too long; the patrol is over.",
+      "role": "body"
+    },
+    {
+      "key": "settle.kills",
+      "ko": "벤 귀신",
+      "en": "Spirits cut down",
+      "role": "display"
+    },
+    {
+      "key": "settle.seals",
+      "ko": "깬 봉인석",
+      "en": "Seals broken",
+      "role": "display"
+    },
+    {
+      "key": "settle.level",
+      "ko": "강화 단계",
+      "en": "Boon level",
+      "role": "display"
+    },
+    {
+      "key": "settle.keep",
+      "ko": "가지고 가는 것",
+      "en": "You keep",
+      "role": "display"
+    },
+    {
+      "key": "settle.lost",
+      "ko": "잃은 것",
+      "en": "Lost",
+      "role": "display"
+    },
+    {
+      "key": "settle.none",
+      "ko": "아무것도 없다",
+      "en": "Nothing",
+      "role": "body"
+    },
+    {
+      "key": "settle.reset",
+      "ko": "사라지는 힘",
+      "en": "Fades with the night",
+      "role": "display"
+    },
+    {
+      "key": "settle.rule",
+      "ko": "강화와 궁극기는 순라에 나설 때마다 처음부터 다시 얻는다.",
+      "en": "Boons and ultimates start over on every patrol.",
+      "role": "body"
+    },
+    {
+      "key": "settle.again",
+      "ko": "다시 채비하기",
+      "en": "Gear up again",
+      "role": "display"
+    },
+    {
+      "key": "settle.title",
+      "ko": "처음 화면으로",
+      "en": "Title screen",
+      "role": "display"
+    },
+    {
+      "key": "hud.upgrade",
+      "ko": "강화 가능",
+      "en": "Boon ready",
+      "role": "display"
+    },
+    {
+      "key": "hud.open",
+      "ko": "연다",
+      "en": "Open",
+      "role": "display"
+    },
+    {
+      "key": "hud.break",
+      "ko": "깬다",
+      "en": "Break",
+      "role": "display"
+    },
+    {
+      "key": "hud.guarded",
+      "ko": "지키는 귀신이 남아 있어 깰 수 없다.",
+      "en": "A guardian remains; it will not break.",
+      "role": "body"
+    },
+    {
+      "key": "hud.guide.special",
+      "ko": "특수 행동",
+      "en": "Special",
+      "role": "body"
+    },
+    {
+      "key": "hud.guide.item",
+      "ko": "소모품 먹기",
+      "en": "Eat item",
+      "role": "body"
+    },
+    {
+      "key": "loot.exp",
+      "ko": "기운을 얻었다.",
+      "en": "Gained spirit.",
+      "role": "body"
+    },
+    {
+      "key": "loot.got",
+      "ko": "{0} 획득",
+      "en": "Got {0}",
+      "role": "body"
+    },
+    {
+      "key": "loot.full",
+      "ko": "궁극기 칸이 가득 차 함을 열 수 없다.",
+      "en": "Ultimate slots are full; the sealed chest will not open.",
+      "role": "body"
+    },
+    {
+      "key": "door.open",
+      "ko": "멀리서 큰 종이 울리고 종루 문이 열렸다.",
+      "en": "A great bell tolls far away; the bell-tower gate opens.",
+      "role": "body"
+    },
+    {
+      "key": "level.up",
+      "ko": "기운이 차올랐다. 강화를 고를 수 있다.",
+      "en": "Spirit wells up. You can choose a boon.",
+      "role": "body"
+    },
+    {
+      "key": "retry.used",
+      "ko": "청사초롱 불빛이 사그라들었다.",
+      "en": "The lantern dims.",
+      "role": "body"
+    },
+    {
+      "key": "hint.special",
+      "ko": "누를 때의 방향에 따라 다른 특수 행동이 나간다.",
+      "en": "The direction you hold picks one of three special moves.",
+      "role": "display"
+    },
+    {
+      "key": "hint.interact",
+      "ko": "상자 앞에 서서 누르면 뚜껑을 연다.",
+      "en": "Stand by a chest and press to open it.",
+      "role": "display"
+    },
+    {
+      "key": "hint.upgrade",
+      "ko": "기운이 차면 눌러 강화를 고른다. 고르는 동안 시간은 멈춘다.",
+      "en": "When spirit wells up, press to choose a boon. Time stops while you choose.",
+      "role": "display"
+    },
+    {
+      "key": "hint.ultimate",
+      "ko": "길게 눌러 기운을 모아 터뜨린다. 모으는 동안 피하기만 된다.",
+      "en": "Hold to gather power and unleash it. While gathering, you can only dodge.",
+      "role": "display"
+    },
+    {
+      "key": "hint.item",
+      "ko": "눌러 소모품을 먹는다. 도중에 받아치거나 피하면 취소된다.",
+      "en": "Press to eat an item. Parrying or dodging midway cancels it.",
+      "role": "display"
+    },
+    {
+      "key": "action.hold",
+      "ko": "모아 베기",
+      "en": "Charged cut",
+      "role": "display"
+    },
+    {
+      "key": "action.special",
+      "ko": "특수 행동",
+      "en": "Special move",
+      "role": "display"
+    },
+    {
+      "key": "action.interact",
+      "ko": "열기 · 깨기",
+      "en": "Open · Break",
+      "role": "display"
+    },
+    {
+      "key": "action.item",
+      "ko": "소모품 먹기",
+      "en": "Eat item",
+      "role": "display"
+    },
+    {
+      "key": "action.itemswitch",
+      "ko": "소모품 바꾸기",
+      "en": "Switch item",
+      "role": "display"
+    },
+    {
+      "key": "action.ultimate",
+      "ko": "궁극기",
+      "en": "Ultimate",
+      "role": "display"
+    },
+    {
+      "key": "action.upgrade",
+      "ko": "강화 고르기",
+      "en": "Choose boon",
+      "role": "display"
+    },
+    {
+      "key": "control.hold",
+      "ko": "누른 채 있다가 놓기",
+      "en": "Hold, then release",
+      "role": "body"
+    },
+    {
+      "key": "control.special",
+      "ko": "+ 제자리·앞·뒤 방향",
+      "en": "+ neutral, forward or back",
+      "role": "body"
+    },
+    {
+      "key": "control.dpad.down",
+      "ko": "아래 방향",
+      "en": "D-pad down",
+      "role": "body"
+    },
+    {
+      "key": "control.ultimate.kb",
+      "ko": "길게 누름",
+      "en": "hold",
+      "role": "body"
+    },
+    {
+      "key": "control.ultimate.pad",
+      "ko": "길게 누름 · 방향 위로 칸 바꾸기",
+      "en": "hold · D-pad up switches slot",
+      "role": "body"
+    },
+    {
+      "key": "enemy.boss",
+      "ko": "쇠 먹는 불가사리",
+      "en": "Iron-eating Bulgasari",
+      "role": "display"
+    },
+    {
+      "key": "enemy.invader",
+      "ko": "저승차사",
+      "en": "Reaper of the Underworld",
+      "role": "display"
+    },
+    {
+      "key": "ui.prev",
+      "ko": "‹",
+      "en": "‹",
+      "role": "display"
+    },
+    {
+      "key": "ui.next",
+      "ko": "›",
+      "en": "›",
+      "role": "display"
+    },
+    {
+      "key": "ui.minus",
+      "ko": "−",
+      "en": "−",
+      "role": "display"
+    },
+    {
+      "key": "ui.plus",
+      "ko": "+",
+      "en": "+",
+      "role": "display"
+    },
+    {
+      "key": "item.bow",
+      "ko": "활",
+      "en": "Bow",
+      "role": "display"
+    },
+    {
+      "key": "item.talisman",
+      "ko": "부적",
+      "en": "Talisman",
+      "role": "display"
+    },
+    {
+      "key": "settings.tab.av",
+      "ko": "화면·소리",
+      "en": "Screen · Sound",
+      "role": "display"
+    },
+    {
+      "key": "settings.tab.controls",
+      "ko": "조작",
+      "en": "Controls",
+      "role": "display"
+    },
+    {
+      "key": "settings.tab.access",
+      "ko": "보조 기능",
+      "en": "Assist",
+      "role": "display"
+    },
+    {
+      "key": "settings.shake",
+      "ko": "화면 흔들림",
+      "en": "Screen shake",
+      "role": "display"
+    },
+    {
+      "key": "settings.off",
+      "ko": "끔",
+      "en": "Off",
+      "role": "display"
+    },
+    {
+      "key": "settings.weak",
+      "ko": "약하게",
+      "en": "Light",
+      "role": "display"
+    },
+    {
+      "key": "settings.normal",
+      "ko": "보통",
+      "en": "Normal",
+      "role": "display"
+    },
+    {
+      "key": "settings.camera",
+      "ko": "연출 시점",
+      "en": "Scene camera",
+      "role": "display"
+    },
+    {
+      "key": "settings.camera.scene",
+      "ko": "장면 맞춤",
+      "en": "Cinematic",
+      "role": "display"
+    },
+    {
+      "key": "settings.camera.wide",
+      "ko": "넓은 고정",
+      "en": "Fixed wide",
+      "role": "display"
+    },
+    {
+      "key": "settings.volume.master",
+      "ko": "전체 음량",
+      "en": "Master volume",
+      "role": "display"
+    },
+    {
+      "key": "settings.volume.sfx",
+      "ko": "효과음",
+      "en": "Effects",
+      "role": "display"
+    },
+    {
+      "key": "settings.volume.ambience",
+      "ko": "바탕 소리",
+      "en": "Ambience",
+      "role": "display"
+    },
+    {
+      "key": "settings.volume.ui",
+      "ko": "메뉴 소리",
+      "en": "Menu sounds",
+      "role": "display"
+    },
+    {
+      "key": "settings.mono",
+      "ko": "소리 모아 듣기",
+      "en": "Mono audio",
+      "role": "display"
+    },
+    {
+      "key": "settings.sensitivity",
+      "ko": "시점 감도",
+      "en": "Look sensitivity",
+      "role": "display"
+    },
+    {
+      "key": "settings.invert",
+      "ko": "위아래 반전",
+      "en": "Invert vertical",
+      "role": "display"
+    },
+    {
+      "key": "settings.text",
+      "ko": "글자 크기",
+      "en": "Text size",
+      "role": "display"
+    },
+    {
+      "key": "settings.text.0",
+      "ko": "보통 100%",
+      "en": "Normal 100%",
+      "role": "display"
+    },
+    {
+      "key": "settings.text.1",
+      "ko": "크게 115%",
+      "en": "Large 115%",
+      "role": "display"
+    },
+    {
+      "key": "settings.text.2",
+      "ko": "더 크게 130%",
+      "en": "Larger 130%",
+      "role": "display"
+    },
+    {
+      "key": "settings.captions",
+      "ko": "소리 자막",
+      "en": "Sound captions",
+      "role": "display"
+    },
+    {
+      "key": "settings.prompts",
+      "ko": "조작 안내",
+      "en": "Control prompts",
+      "role": "display"
+    },
+    {
+      "key": "settings.prompts.on",
+      "ko": "늘 보임",
+      "en": "Always",
+      "role": "display"
+    },
+    {
+      "key": "settings.prompts.first",
+      "ko": "첫 판에만",
+      "en": "First run only",
+      "role": "display"
+    },
+    {
+      "key": "settings.prompts.off",
+      "ko": "보이지 않음",
+      "en": "Hidden",
+      "role": "display"
+    },
+    {
+      "key": "settings.judge",
+      "ko": "받아치기 판정",
+      "en": "Parry results",
+      "role": "display"
+    },
+    {
+      "key": "settings.credits",
+      "ko": "소리는 코드로 합성했다. 글꼴 저작권 고지는 아래 정보에서 본다.\n기획·코드는 생성형 인공지능(클로드·코덱스)과 함께 만들었다.",
+      "en": "Sounds are synthesized in code. Font notices are under Info below.\nDesign and code were made together with generative AI (Claude, Codex).",
+      "role": "body"
+    },
+    {
+      "key": "settings.keys",
+      "ko": "키 바꾸기",
+      "en": "Key bindings",
+      "role": "display"
+    },
+    {
+      "key": "settings.keys.reset",
+      "ko": "처음 키로",
+      "en": "Reset keys",
+      "role": "display"
+    },
+    {
+      "key": "settings.keys.press",
+      "ko": "새 키를 누른다",
+      "en": "Press a new key",
+      "role": "display"
+    },
+    {
+      "key": "settings.keys.note",
+      "ko": "메뉴 키·패드는 변경 불가. 겹친 키는 앞 칸이 비워진다.",
+      "en": "The menu key and gamepad cannot be changed. A key already in use leaves its old slot empty.",
+      "role": "body"
+    },
+    {
+      "key": "settings.key.up",
+      "ko": "앞으로 걷기",
+      "en": "Walk forward",
+      "role": "display"
+    },
+    {
+      "key": "settings.key.down",
+      "ko": "뒤로 걷기",
+      "en": "Walk back",
+      "role": "display"
+    },
+    {
+      "key": "settings.key.left",
+      "ko": "왼쪽으로 걷기",
+      "en": "Walk left",
+      "role": "display"
+    },
+    {
+      "key": "settings.key.right",
+      "ko": "오른쪽으로 걷기",
+      "en": "Walk right",
+      "role": "display"
+    },
+    {
+      "key": "settings.key.ultimate1",
+      "ko": "첫째 궁극기",
+      "en": "Ultimate slot 1",
+      "role": "display"
+    },
+    {
+      "key": "settings.key.ultimate2",
+      "ko": "둘째 궁극기",
+      "en": "Ultimate slot 2",
+      "role": "display"
+    },
+    {
+      "key": "caption.gong",
+      "ko": "징 소리: 막을 수 없는 공격",
+      "en": "Gong: unblockable attack",
+      "role": "body"
+    },
+    {
+      "key": "caption.handbell",
+      "ko": "요령 소리: 저승차사 접근",
+      "en": "Handbell: the Reaper approaches",
+      "role": "body"
+    },
+    {
+      "key": "caption.door",
+      "ko": "큰 종소리: 종루 문 열림",
+      "en": "Great bell: the tower gate opens",
+      "role": "body"
+    },
+    {
+      "key": "caption.roar",
+      "ko": "불가사리의 포효",
+      "en": "Bulgasari's roar",
+      "role": "body"
+    },
+    {
+      "key": "caption.spit",
+      "ko": "쇳조각 뱉는 소리",
+      "en": "Iron shards spat",
+      "role": "body"
+    },
+    {
+      "key": "caption.charge",
+      "ko": "땅울림: 힘을 모으는 소리",
+      "en": "Rumbling: gathering power",
+      "role": "body"
+    },
+    {
+      "key": "caption.grab",
+      "ko": "낮은 기척: 붙잡으려 손 뻗음",
+      "en": "Low stir: reaching to grab",
+      "role": "body"
+    },
+    {
+      "key": "caption.anchor",
+      "ko": "칼끝 울림: 곧 내려침",
+      "en": "Blade rings: strike coming",
+      "role": "body"
+    },
+    {
+      "key": "caption.distant",
+      "ko": "먼 종소리",
+      "en": "Distant bell",
+      "role": "body"
+    },
+    {
+      "key": "caption.seal",
+      "ko": "봉인석 깨지는 소리",
+      "en": "A seal stone breaks",
+      "role": "body"
+    },
+    {
+      "key": "caption.stomp",
+      "ko": "발 구르는 소리: 곧 돌진",
+      "en": "Stomping: charge coming",
+      "role": "body"
+    },
+    {
+      "key": "caption.release",
+      "ko": "모은 힘을 터뜨리는 소리",
+      "en": "Gathered power released",
+      "role": "body"
+    },
+    {
+      "key": "judge.exact",
+      "ko": "정확한 받아치기",
+      "en": "Perfect parry",
+      "role": "display"
+    },
+    {
+      "key": "judge.early",
+      "ko": "일찍 누름",
+      "en": "Too early",
+      "role": "display"
+    },
+    {
+      "key": "judge.late",
+      "ko": "늦게 누름",
+      "en": "Too late",
+      "role": "display"
+    },
+    {
+      "key": "judge.block",
+      "ko": "막음",
+      "en": "Blocked",
+      "role": "display"
+    },
+    {
+      "key": "judge.guardbreak",
+      "ko": "막기 뚫림",
+      "en": "Guard broken",
+      "role": "display"
+    },
+    {
+      "key": "judge.hit",
+      "ko": "맞음",
+      "en": "Hit",
+      "role": "display"
+    },
+    {
+      "key": "judge.evade",
+      "ko": "피함",
+      "en": "Evaded",
+      "role": "display"
+    },
+    {
+      "key": "ui.blank",
+      "ko": " ",
+      "en": " ",
+      "role": "display"
+    },
+    {
+      "key": "sys.profile.broken",
+      "ko": "보관함을 읽지 못해 기록을 지키려 이번엔 저장하지 않는다.",
+      "en": "Could not read your storage. This session will not save.",
+      "role": "body"
     }
   ]
 }
