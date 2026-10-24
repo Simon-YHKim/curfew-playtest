@@ -162,6 +162,24 @@
             "shotRange": 12.0,
             "shotRadius": 0.699999988079071,
             "pierce": 0
+        },
+        {
+            "id": "reverse-blade",
+            "windup": 15,
+            "windupStep": 2,
+            "active": 4,
+            "recovery": 18,
+            "finisherRecovery": 8,
+            "comboHits": 3,
+            "damage": 10,
+            "posture": 20,
+            "range": 2.5999999046325684,
+            "ranged": false,
+            "homing": false,
+            "shotSpeed": 0.0,
+            "shotRange": 0.0,
+            "shotRadius": 0.0,
+            "pierce": 0
         }
     ],
     "armors": [
@@ -172,7 +190,8 @@
             "damageTaken": 1.0,
             "windupAdd": 0,
             "recoveryAdd": 0,
-            "weight": 0
+            "weight": 0,
+            "dashRecovery": 4
         },
         {
             "id": "heavy",
@@ -181,7 +200,8 @@
             "damageTaken": 0.800000011920929,
             "windupAdd": 2,
             "recoveryAdd": 3,
-            "weight": 1
+            "weight": 1,
+            "dashRecovery": 7
         }
     ],
     "run": {
@@ -202,6 +222,51 @@
         "attackerGapTicks": 45,
         "bossExecutionPercent": 35,
         "bossPhases": 2,
+        "mobExecutionPercent": 100,
+        "eliteExecutionPercent": 100,
+        "playerExecutionPercent": 100,
+        "nearMissCounterTicks": 40,
+        "nearMissDamagePercent": 125,
+        "nearMissPosturePercent": 120,
+        "practiceHealthFloor": 1,
+        "practiceResetTicks": 150,
+        "grabMobPercent": 18,
+        "grabElitePercent": 30,
+        "sweepPercent": 30,
+        "eliteKnockdownSweepPercent": 50,
+        "eliteR5Percent": 25,
+        "bossChargePercent": 55,
+        "bossTriplePercent": 32,
+        "bossDelayedPercent": 30,
+        "bossQuakeEarlyPercent": 22,
+        "bossQuakeLatePercent": 30,
+        "invaderComboPercent": 55,
+        "invaderSpecialPercent": 25,
+        "grabReach": 2.0999999046325684,
+        "chargeReach": 9.0,
+        "spitReach": 16.0,
+        "quakeReach": 6.5,
+        "bossMeleeReach": 3.799999952316284,
+        "bossFarDistance": 6.5,
+        "strafePeriodMob": 110,
+        "strafePeriodDokkaebi": 70,
+        "watchFlipPeriod": 160,
+        "bossSpeedScale": 1.0499999523162842,
+        "invaderSpeedScale": 1.100000023841858,
+        "healCounterArc": 70.0,
+        "healCounterNear": 3.799999952316284,
+        "counterPulseTicks": 0,
+        "respawnIntervalTicks": 9000,
+        "respawnCount": 2,
+        "fieldItemIntervalTicks": 6000,
+        "sealRewardExp": 10,
+        "mobDropPercent": 25,
+        "dropYakgwaPercent": 70,
+        "chestYakgwaPercent": 65,
+        "fieldItemYakgwaPercent": 65,
+        "sealExpPercent": 50,
+        "stuckStage1Ticks": 9000,
+        "stuckStage2Ticks": 18000,
         "expMob": 10,
         "expElite": 30,
         "expInvader": 45,
@@ -230,5 +295,10 @@
         "maxRunTicks": 150000,
         "carryLimit": 3,
         "sealCount": 3
-    }
+    },
+    "sceneExecutionFirst": 2.4000000953674316,
+    "sceneExecutionRepeat": 1.2999999523162842,
+    "sceneBreak": 2.4000000953674316,
+    "sceneReward": 2.200000047683716,
+    "scenePracticeScale": 0.6000000238418579
 }

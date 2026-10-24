@@ -49,12 +49,6 @@
       "role": "body"
     },
     {
-      "key": "hud.soul.bell",
-      "ko": "방울 소리가 가까워진다",
-      "en": "The bell grows louder",
-      "role": "body"
-    },
-    {
       "key": "hud.capture",
       "ko": "넋 붙잡기",
       "en": "Catch soul",
@@ -64,12 +58,6 @@
       "key": "hud.soul.warn",
       "ko": "붙잡히면 끝이다",
       "en": "If it's caught, it's over",
-      "role": "body"
-    },
-    {
-      "key": "hud.encounter_n",
-      "ko": "{n}째 골목",
-      "en": "Alley {n}",
       "role": "body"
     },
     {
@@ -680,8 +668,8 @@
     },
     {
       "key": "glyph.chars",
-      "ko": "0123456789 .,:;!?-+/%()[]{}ABFLMRSTWXYabcefghiklmnostuy",
-      "en": "0123456789 .,:;!?-+/%()[]{}ABFLMRSTWXYabcefghiklmnostuy",
+      "ko": "0123456789 .,:;!?-+/%()[]{}ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz—↑↓←→×○□△·",
+      "en": "0123456789 .,:;!?-+/%()[]{}ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz—↑↓←→×○□△·",
       "role": "body"
     },
     {
@@ -1309,12 +1297,6 @@
       "role": "body"
     },
     {
-      "key": "door.open",
-      "ko": "멀리서 큰 종이 울리고 종루 문이 열렸다.",
-      "en": "A great bell tolls far away; the bell-tower gate opens.",
-      "role": "body"
-    },
-    {
       "key": "level.up",
       "ko": "기운이 차올랐다. 강화를 고를 수 있다.",
       "en": "Spirit wells up. You can choose a boon.",
@@ -1640,8 +1622,8 @@
     },
     {
       "key": "settings.credits",
-      "ko": "소리는 코드로 합성했다. 글꼴 저작권 고지는 아래 정보에서 본다.\n기획·코드는 생성형 인공지능(클로드·코덱스)과 함께 만들었다.",
-      "en": "Sounds are synthesized in code. Font notices are under Info below.\nDesign and code were made together with generative AI (Claude, Codex).",
+      "ko": "소리는 코드로 합성했고, 글꼴 저작권 고지는 아래에 있어요. 기획·코드는 생성형 인공지능(클로드·코덱스)과 함께 만들었으며, 바닥·벽 재질 그림 일부(재질 지도 2장)도 인공지능으로 제작했어요.",
+      "en": "Sounds are synthesized in code. Font notices are below.\nDesign and code were made together with generative AI (Claude, Codex). Some floor and wall textures (two material maps) were also made with generative AI.",
       "role": "body"
     },
     {
@@ -1658,14 +1640,14 @@
     },
     {
       "key": "settings.keys.press",
-      "ko": "새 키를 누른다",
+      "ko": "새 키를 누르세요.",
       "en": "Press a new key",
       "role": "display"
     },
     {
       "key": "settings.keys.note",
-      "ko": "메뉴 키·패드는 변경 불가. 겹친 키는 앞 칸이 비워진다.",
-      "en": "The menu key and gamepad cannot be changed. A key already in use leaves its old slot empty.",
+      "ko": "나가기 키는 늘 뒤로·메뉴예요. 겹친 키는 앞 칸이 비워져요.",
+      "en": "Esc always goes back or opens the menu. A key already in use leaves its old slot empty.",
       "role": "body"
     },
     {
@@ -1826,9 +1808,567 @@
     },
     {
       "key": "sys.profile.broken",
-      "ko": "보관함을 읽지 못해 기록을 지키려 이번엔 저장하지 않는다.",
+      "ko": "보관함을 읽지 못해 기록을 지키려 이번엔 저장하지 않아요.",
       "en": "Could not read your storage. This session will not save.",
       "role": "body"
+    },
+    {
+      "key": "settings.key.menu",
+      "ko": "메뉴 열기",
+      "en": "Open menu",
+      "role": "body"
+    },
+    {
+      "key": "settings.key.escape",
+      "ko": "뒤로·메뉴",
+      "en": "Back / menu",
+      "role": "body"
+    },
+    {
+      "key": "settings.keys.locked",
+      "ko": "바꿀 수 없어요.",
+      "en": "Cannot be changed",
+      "role": "body"
+    },
+    {
+      "key": "menu.quit.web",
+      "ko": "종료 — 웹 시험판은 탭을 닫으면 끝나요.",
+      "en": "Quit — close the tab to end the web playtest",
+      "role": "display"
+    },
+    {
+      "key": "menu.practice.log",
+      "ko": "오늘 연습 기록",
+      "en": "Today's practice log",
+      "role": "display"
+    },
+    {
+      "key": "judge.down",
+      "ko": "쓰러뜨림",
+      "en": "Knocked down",
+      "role": "display"
+    },
+    {
+      "key": "hint.combo.2",
+      "ko": "연달아 누르면 두 번까지 이어 친다",
+      "en": "Press again to chain two strikes.",
+      "role": "display"
+    },
+    {
+      "key": "hint.combo.3",
+      "ko": "연달아 누르면 세 번까지 이어 벤다",
+      "en": "Press repeatedly to chain up to three slashes.",
+      "role": "display"
+    },
+    {
+      "key": "hint.combo.4",
+      "ko": "연달아 누르면 네 번까지 이어 벤다",
+      "en": "Press repeatedly to chain up to four slashes.",
+      "role": "display"
+    },
+    {
+      "key": "hint.shoot",
+      "ko": "누르면 쏜다. 누른 채 두었다 놓으면 세게 쏜다",
+      "en": "Press to shoot. Hold and release for a strong shot.",
+      "role": "display"
+    },
+    {
+      "key": "hint.feint",
+      "ko": "공격 준비 중에 방어·대시를 누르면 동작을 거둔다",
+      "en": "Press defend or dash during the wind-up to call off the attack.",
+      "role": "display"
+    },
+    {
+      "key": "hint.hold",
+      "ko": "공격을 누른 채 두었다 놓으면 모아 벤다",
+      "en": "Hold attack and release for a charged slash.",
+      "role": "display"
+    },
+    {
+      "key": "notice.photosensitive",
+      "ko": "광과민 안내: 이 게임에는 번쩍임과 불꽃 효과가 있어요. 빛에 예민하다면 옵션에서 섬광을 줄일 수 있어요.",
+      "en": "Photosensitivity notice: this game has flashes and sparks. If you are sensitive to light, you can reduce flashes in Options.",
+      "role": "body"
+    },
+    {
+      "key": "notice.photosensitive.short",
+      "ko": "번쩍임 효과가 있어요. 옵션에서 줄일 수 있어요.",
+      "en": "Flashes ahead. You can reduce them in Options.",
+      "role": "body"
+    },
+    {
+      "key": "notice.close",
+      "ko": "E 키를 눌러 닫으세요.",
+      "en": "E to close",
+      "role": "body"
+    },
+    {
+      "key": "menu.privacy",
+      "ko": "개인정보 처리",
+      "en": "Privacy",
+      "role": "display"
+    },
+    {
+      "key": "privacy.body",
+      "ko": "이 웹 시험판은 설정과 보관함을 브라우저 저장소에만 기록해요. 밖으로 보내는 정보는 없어요. 브라우저 데이터를 지우면 기록도 사라져요.",
+      "en": "This web playtest keeps your settings and stash only in this browser's storage. Nothing is sent anywhere. Clearing browser data erases them.",
+      "role": "body"
+    },
+    {
+      "key": "settings.tab.screen",
+      "ko": "화면",
+      "en": "Display",
+      "role": "display"
+    },
+    {
+      "key": "settings.tab.sound",
+      "ko": "소리",
+      "en": "Sound",
+      "role": "display"
+    },
+    {
+      "key": "settings.distance",
+      "ko": "카메라 거리",
+      "en": "Camera distance",
+      "role": "display"
+    },
+    {
+      "key": "settings.distance.near",
+      "ko": "가까이",
+      "en": "Near",
+      "role": "display"
+    },
+    {
+      "key": "settings.distance.normal",
+      "ko": "보통",
+      "en": "Normal",
+      "role": "display"
+    },
+    {
+      "key": "settings.distance.far",
+      "ko": "멀리",
+      "en": "Far",
+      "role": "display"
+    },
+    {
+      "key": "settings.brightness",
+      "ko": "밝기",
+      "en": "Brightness",
+      "role": "display"
+    },
+    {
+      "key": "settings.framecap",
+      "ko": "프레임 상한",
+      "en": "Frame cap",
+      "role": "display"
+    },
+    {
+      "key": "settings.framecap.30",
+      "ko": "30",
+      "en": "30",
+      "role": "display"
+    },
+    {
+      "key": "settings.framecap.60",
+      "ko": "60",
+      "en": "60",
+      "role": "display"
+    },
+    {
+      "key": "settings.quality",
+      "ko": "효과 품질",
+      "en": "Effects quality",
+      "role": "display"
+    },
+    {
+      "key": "settings.quality.low",
+      "ko": "낮게",
+      "en": "Low",
+      "role": "display"
+    },
+    {
+      "key": "settings.quality.normal",
+      "ko": "보통",
+      "en": "Normal",
+      "role": "display"
+    },
+    {
+      "key": "settings.controls.page",
+      "ko": "보는 항목",
+      "en": "Showing",
+      "role": "display"
+    },
+    {
+      "key": "settings.controls.basic",
+      "ko": "기본",
+      "en": "Basics",
+      "role": "display"
+    },
+    {
+      "key": "settings.controls.keys",
+      "ko": "키보드 키",
+      "en": "Keyboard keys",
+      "role": "display"
+    },
+    {
+      "key": "settings.controls.pad",
+      "ko": "패드 버튼",
+      "en": "Gamepad buttons",
+      "role": "display"
+    },
+    {
+      "key": "settings.invertx",
+      "ko": "좌우 반전",
+      "en": "Invert horizontal",
+      "role": "display"
+    },
+    {
+      "key": "settings.strong",
+      "ko": "강하게",
+      "en": "Strong",
+      "role": "display"
+    },
+    {
+      "key": "settings.run",
+      "ko": "달리기",
+      "en": "Run",
+      "role": "display"
+    },
+    {
+      "key": "settings.run.hold",
+      "ko": "누르고 있기",
+      "en": "Hold",
+      "role": "display"
+    },
+    {
+      "key": "settings.run.toggle",
+      "ko": "한 번 눌러 켜기",
+      "en": "Toggle",
+      "role": "display"
+    },
+    {
+      "key": "settings.lockmode",
+      "ko": "겨누기 방식",
+      "en": "Lock-on mode",
+      "role": "display"
+    },
+    {
+      "key": "settings.lockmode.toggle",
+      "ko": "눌러 켜고 끄기",
+      "en": "Press to toggle",
+      "role": "display"
+    },
+    {
+      "key": "settings.lockmode.hold",
+      "ko": "누르는 동안만",
+      "en": "While held",
+      "role": "display"
+    },
+    {
+      "key": "settings.switchdir",
+      "ko": "대상 바꾸기 방향",
+      "en": "Target switch direction",
+      "role": "display"
+    },
+    {
+      "key": "settings.switchdir.normal",
+      "ko": "보통",
+      "en": "Normal",
+      "role": "display"
+    },
+    {
+      "key": "settings.switchdir.reverse",
+      "ko": "반대로",
+      "en": "Reversed",
+      "role": "display"
+    },
+    {
+      "key": "settings.pad",
+      "ko": "패드 버튼 배정",
+      "en": "Gamepad buttons",
+      "role": "display"
+    },
+    {
+      "key": "settings.pad.press",
+      "ko": "새 패드 버튼을 누르세요.",
+      "en": "Press a button",
+      "role": "body"
+    },
+    {
+      "key": "settings.pad.note",
+      "ko": "메뉴 버튼은 바꿀 수 없어요. 겹친 버튼은 서로 바뀌어요.",
+      "en": "The menu button cannot be changed. A button already in use swaps places.",
+      "role": "body"
+    },
+    {
+      "key": "settings.pad.interact",
+      "ko": "상호작용(짧게)·궁극기(길게)",
+      "en": "Interact (tap) / ultimate (hold)",
+      "role": "body"
+    },
+    {
+      "key": "settings.pad.ultimateslot",
+      "ko": "궁극기 칸 고르기",
+      "en": "Pick ultimate slot",
+      "role": "body"
+    },
+    {
+      "key": "settings.keys.swapped",
+      "ko": "겹친 키는 '{0}'와 서로 바꿨어요.",
+      "en": "Swapped with '{0}'.",
+      "role": "body"
+    },
+    {
+      "key": "settings.keys.overlay",
+      "ko": "특수 행동이 시프트, 메뉴가 탭 키면 스팀 오버레이와 겹칠 수 있어요.",
+      "en": "Special on Shift with menu on Tab may clash with the Steam overlay (Shift+Tab).",
+      "role": "body"
+    },
+    {
+      "key": "hint.quake",
+      "ko": "땅이 울리는 공격은 막거나 받아칠 수 없다. 피하거나 뛰어라",
+      "en": "Ground shocks can't be blocked or parried. Dodge or jump.",
+      "role": "display"
+    },
+    {
+      "key": "hud.skip.hold",
+      "ko": "길게 눌러 넘기기",
+      "en": "Hold to skip",
+      "role": "body"
+    },
+    {
+      "key": "settings.colorblind",
+      "ko": "색각 보정",
+      "en": "Color vision",
+      "role": "display"
+    },
+    {
+      "key": "settings.colorblind.0",
+      "ko": "기본",
+      "en": "Default",
+      "role": "display"
+    },
+    {
+      "key": "settings.colorblind.1",
+      "ko": "적록",
+      "en": "Red-green",
+      "role": "display"
+    },
+    {
+      "key": "settings.colorblind.2",
+      "ko": "청황",
+      "en": "Blue-yellow",
+      "role": "display"
+    },
+    {
+      "key": "settings.sounddir",
+      "ko": "소리 방향 표시",
+      "en": "Sound direction",
+      "role": "display"
+    },
+    {
+      "key": "action.art",
+      "ko": "무기 기술",
+      "en": "Weapon art",
+      "role": "body"
+    },
+    {
+      "key": "action.swap",
+      "ko": "무기 바꾸기",
+      "en": "Swap weapon",
+      "role": "body"
+    },
+    {
+      "key": "prep.secondary",
+      "ko": "보조 무기",
+      "en": "Second weapon",
+      "role": "display"
+    },
+    {
+      "key": "prep.stat.damage",
+      "ko": "피해",
+      "en": "Damage",
+      "role": "body"
+    },
+    {
+      "key": "prep.stat.speed",
+      "ko": "빠르기",
+      "en": "Speed",
+      "role": "body"
+    },
+    {
+      "key": "prep.stat.posture",
+      "ko": "체간",
+      "en": "Posture",
+      "role": "body"
+    },
+    {
+      "key": "prep.stat.range",
+      "ko": "사거리",
+      "en": "Reach",
+      "role": "body"
+    },
+    {
+      "key": "prep.art",
+      "ko": "무기 기술: {0}",
+      "en": "Weapon art: {0}",
+      "role": "body"
+    },
+    {
+      "key": "art.downward-cleave",
+      "ko": "내려베기",
+      "en": "Downward cleave",
+      "role": "body"
+    },
+    {
+      "key": "art.rapid-stabs",
+      "ko": "연속 찌르기",
+      "en": "Rapid stabs",
+      "role": "body"
+    },
+    {
+      "key": "art.pyeonjeon",
+      "ko": "편전",
+      "en": "Pyeonjeon",
+      "role": "body"
+    },
+    {
+      "key": "art.resonance",
+      "ko": "울림 부적",
+      "en": "Echo talisman",
+      "role": "body"
+    },
+    {
+      "key": "art.back-strike",
+      "ko": "등날 치기",
+      "en": "Back-edge strike",
+      "role": "body"
+    },
+    {
+      "key": "item.reverse-blade",
+      "ko": "순라검",
+      "en": "Patrol blade",
+      "role": "body"
+    },
+    {
+      "key": "item.yakgwa.desc",
+      "ko": "통금 밤에 품고 다니는 꿀과자다. 한 입 먹으면 몸이 조금 돌아온다.",
+      "en": "A honey cake carried through curfew nights. One bite restores a little strength.",
+      "role": "body"
+    },
+    {
+      "key": "item.cheongsim.desc",
+      "ko": "놀란 숨을 가라앉히는 환약이다. 흐트러진 자세를 단번에 바로잡는다.",
+      "en": "A pill that calms a startled breath and steadies a broken stance at once.",
+      "role": "body"
+    },
+    {
+      "key": "item.longsword.desc",
+      "ko": "순라군이 허리에 차던 환도다. 길게 베고 크게 내려친다.",
+      "en": "The hwando a patrolman wore at his hip. Long cuts and heavy blows.",
+      "role": "body"
+    },
+    {
+      "key": "item.dagger.desc",
+      "ko": "품에 숨기던 장도다. 짧고 빠르게 찔러 든다.",
+      "en": "A jangdo kept hidden in the robe. Short, quick stabs.",
+      "role": "body"
+    },
+    {
+      "key": "item.bow.desc",
+      "ko": "국궁이다. 시위가 울리면 먼 데 망자도 돌아본다.",
+      "en": "A Korean bow. When the string sings, even distant dead turn to look.",
+      "role": "body"
+    },
+    {
+      "key": "item.talisman.desc",
+      "ko": "울림을 담아 던지는 부적이다. 저절로 망자를 찾아간다.",
+      "en": "A talisman thrown with an echo inside. It seeks out the dead on its own.",
+      "role": "body"
+    },
+    {
+      "key": "item.reverse-blade.desc",
+      "ko": "사람을 죽이지 않고 붙잡으려 날을 등으로 돌린 순라의 칼이다. 베기보다 자세를 꺾는다.",
+      "en": "A patrol blade turned edge-inward to capture, not kill. It breaks stances more than flesh.",
+      "role": "body"
+    },
+    {
+      "key": "item.light.desc",
+      "ko": "가벼운 순라 군복이다. 멀리 피하지만 맞으면 더 아프다.",
+      "en": "A light patrol uniform. Long dodges, but hits hurt more.",
+      "role": "body"
+    },
+    {
+      "key": "item.heavy.desc",
+      "ko": "무쇠 갑옷이다. 걸음은 무겁지만 맞아도 덜 다친다.",
+      "en": "Iron armor. Heavy steps, but hits hurt less.",
+      "role": "body"
+    },
+    {
+      "key": "item.blue-steel.desc",
+      "ko": "푸른 빛이 도는 환도다. 같은 칼보다 깊이 벤다.",
+      "en": "A hwando with a blue sheen. It cuts deeper than its kin.",
+      "role": "body"
+    },
+    {
+      "key": "item.plum-dagger.desc",
+      "ko": "매화를 새긴 장도다. 찌르는 힘이 더 세다.",
+      "en": "A jangdo carved with plum blossoms. It stabs harder.",
+      "role": "body"
+    },
+    {
+      "key": "item.silk-coat.desc",
+      "ko": "비단으로 지은 군복이다. 피한 뒤 다시 몸을 날리기가 빠르다.",
+      "en": "A silk uniform. You can dodge again sooner.",
+      "role": "body"
+    },
+    {
+      "key": "item.iron-scale.desc",
+      "ko": "겹겹이 엮은 쇠비늘 갑옷이다. 받는 피해를 덜어 준다.",
+      "en": "Iron scales laced layer on layer. It softens the blows you take.",
+      "role": "body"
+    },
+    {
+      "key": "item.norigae.desc",
+      "ko": "망자가 남긴 노리개다. 정확히 받아 넘기면 상대가 더 크게 흔들린다.",
+      "en": "A norigae left by the dead. Exact parries shake the foe harder.",
+      "role": "body"
+    },
+    {
+      "key": "item.knot-bracelet.desc",
+      "ko": "매듭 팔찌다. 흩어진 기운을 멀리서도 끌어온다.",
+      "en": "A knotted bracelet. It draws scattered spirit from farther away.",
+      "role": "body"
+    },
+    {
+      "key": "item.haetae-seal.desc",
+      "ko": "해태를 새긴 인장이다. 받아 넘기고 베는 힘을 함께 키운다.",
+      "en": "A seal carved with a haetae. It strengthens both parries and cuts.",
+      "role": "body"
+    },
+    {
+      "key": "item.none-weapon",
+      "ko": "보조 무기 없음",
+      "en": "No second weapon",
+      "role": "body"
+    },
+    {
+      "key": "sys.settings.broken",
+      "ko": "설정을 읽지 못해 기본값으로 시작했어요.",
+      "en": "Settings could not be read, so defaults are in use.",
+      "role": "body"
+    },
+    {
+      "key": "info.build",
+      "ko": "빌드 {0}",
+      "en": "Build {0}",
+      "role": "body"
+    },
+    {
+      "key": "settings.tab.info",
+      "ko": "정보",
+      "en": "About",
+      "role": "display"
     }
   ]
 }

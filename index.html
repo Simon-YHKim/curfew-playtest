@@ -22,18 +22,18 @@ button{font:22px CurfewDisplay;background:none;color:inherit;padding:12px 24px;b
 <div id="language"><button data-lang="ko" data-key="menu.korean"></button><button data-lang="en" data-key="menu.english"></button></div></main>
 <script>
 const canvas=document.querySelector("#unity-canvas"),loading=document.querySelector("#loading");
-const started=performance.now();window.curfewLoad={started,readyMs:null};let table={},language="ko",tipIndex=0,timer;
+const started=performance.now();window.curfewLoad={started,readyMs:null};let table={},language=(navigator.language||"ko").toLowerCase().startsWith("ko")?"ko":"en",chosen=false,tipIndex=0,timer;
 const L=key=>(table[key]||{})[language]||"";
 function localize(){document.documentElement.lang=language;document.querySelectorAll("[data-key]").forEach(e=>e.textContent=L(e.dataset.key));canvas.setAttribute("aria-label",L("title.name"));nextTip();}
 function nextTip(){document.querySelector("#tip").textContent=L("sys.tip"+(tipIndex++%3+1));}
-document.querySelectorAll("[data-lang]").forEach(e=>e.onclick=()=>{language=e.dataset.lang;localize();});
+document.querySelectorAll("[data-lang]").forEach(e=>e.onclick=()=>{language=e.dataset.lang;chosen=true;localize();});
 function fail(error){clearInterval(timer);loading.hidden=true;document.querySelector("#failed").hidden=false;document.querySelector("#error-text").textContent=error||L("sys.error");}
 document.querySelector("#reload").onclick=()=>location.reload();
 const config={dataUrl:"Build/WebPlaytest.data.unityweb",frameworkUrl:"Build/WebPlaytest.framework.js.unityweb",codeUrl:"Build/WebPlaytest.wasm.unityweb",streamingAssetsUrl:"StreamingAssets",companyName:"DefaultCompany",productName:"Curfew Playtest",productVersion:"0.1.0",matchWebGLToCanvasSize:true,devicePixelRatio:Math.min(window.devicePixelRatio||1,1.5),showBanner:(message,type)=>{if(type==="error")fail(message);}};
 async function start(){const response=await fetch("StreamingAssets/localization.json");if(!response.ok)throw new Error("localization.json");const catalog=await response.json();table=Object.fromEntries(catalog.entries.map(e=>[e.key,e]));localize();
 const phone=matchMedia("(pointer:coarse)").matches&&!matchMedia("(any-pointer:fine)").matches;if(phone){loading.hidden=true;document.querySelector("#mobile").hidden=false;return;}
 timer=setInterval(nextTip,6000);const loader=document.createElement("script");loader.src="Build/WebPlaytest.loader.js";
-loader.onload=()=>createUnityInstance(canvas,config,p=>{document.querySelector(".band i").style.width=(p*100)+"%";document.querySelector(".band").setAttribute("aria-valuenow",Math.round(p*100));}).then(instance=>{window.curfewInstance=instance;clearInterval(timer);loading.hidden=true;document.querySelector("#language").hidden=true;canvas.focus();instance.SendMessage("CurfewApp","SetLanguage",language);window.curfewLoad.readyMs=performance.now()-started;}).catch(e=>fail(String(e)));loader.onerror=()=>fail(L("sys.error"));document.body.appendChild(loader);}
+loader.onload=()=>createUnityInstance(canvas,config,p=>{document.querySelector(".band i").style.width=(p*100)+"%";document.querySelector(".band").setAttribute("aria-valuenow",Math.round(p*100));}).then(instance=>{window.curfewInstance=instance;clearInterval(timer);loading.hidden=true;document.querySelector("#language").hidden=true;canvas.focus();instance.SendMessage("CurfewApp",chosen?"SetLanguage":"DefaultLanguage",language);window.curfewLoad.readyMs=performance.now()-started;}).catch(e=>fail(String(e)));loader.onerror=()=>fail(L("sys.error"));document.body.appendChild(loader);}
 start().catch(e=>fail(String(e)));canvas.addEventListener("contextmenu",e=>e.preventDefault());
 function lostFocus(){if(window.curfewInstance)window.curfewInstance.SendMessage("CurfewApp","OnBrowserFocus","0");}window.addEventListener("blur",lostFocus);document.addEventListener("visibilitychange",()=>{if(document.hidden)lostFocus();});
 window.curfewDownload=replay=>{const value=replay?window.curfewReplay:window.curfewResult;if(!value)return;const url=URL.createObjectURL(new Blob([JSON.stringify(value,null,2)],{type:"application/json"}));const a=document.createElement("a");a.href=url;a.download=replay?"curfew-input-replay.json":"curfew-result.json";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
